@@ -5,7 +5,7 @@ function NewTodo(props) {
 
   const [todo, setTodo] = useState(props.nextTodo);
 
-  const handleSubmit = evt => {
+  const saveTodo = evt => {
     if (todo.todoText === "") {
       return;
     }
@@ -20,15 +20,14 @@ function NewTodo(props) {
     todo.todoText = val;
     setTodo({ ...todo });
   };
-  const title = todo.id==="" ?"Create new Todo" : "Edit Todo"
+  const title = todo.id === "" ? "Create new Todo" : "Edit Todo"
   return (
     <div>
       <h4>{title}</h4>
-      <form onSubmit={handleSubmit}>
+      <form>
         <input value={todo.todoText} onChange={onChange} />
-        <div style={{ marginTop: 5 }}>
-          <button className="btn btn-info">Save</button>
-        </div>
+        <br/><br/>
+        <button onClick={saveTodo} className="btn btn-info">Save</button>
       </form>
       {todo.id !== "" && <p>Editing todo with</p>}
     </div>
