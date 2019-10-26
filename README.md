@@ -7,8 +7,8 @@ Download as a zip-file, unzip, and copy files into, either an existing project, 
 ## Important 2 Add uuid to your project, like so:
 In the **root** of your project (folder with package.json) do:
 
-`npm install uuid` 
+`npm install uuid react-bootstrap bootstrap` 
 
 or if are using yarn
 
-`yarn add uuid`
+`yarn add uuid react-bootstrap bootstrap`
