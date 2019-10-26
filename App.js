@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import TodoList from "./TodoList"
 import NewTodo from "./NewTodo"
 import uuid from "uuid/v1";
